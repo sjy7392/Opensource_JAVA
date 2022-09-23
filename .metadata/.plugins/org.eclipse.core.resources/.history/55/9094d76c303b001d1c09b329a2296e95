@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Hw3_7 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		  int arr[]=new int[10];
+		  
+		  int n;
+		  double sum=0.0;
+		  double avg;
+	      
+		  for(n=0; n<arr.length; n++) {
+			  arr[n]=(int)(Math.random()*10+1);
+			  sum+=arr[n];
+		  }
+		  
+	      System.out.print("랜덤한 정수들 : ");
+	      for(n=0; n<arr.length; n++) {
+	    	  System.out.print(arr[n]+" ");
+	      }
+	      System.out.println();
+	      
+	      avg=sum/arr.length;
+	      System.out.print("평균은 "+ avg);
+
+	      sc.close();
+	}
+
+}
